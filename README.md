@@ -16,3 +16,7 @@ For the purpose of installing:
 - Download desired apps from App Store (iTerm2, Barkeeper, etc.)
 - Import iterm2 settings from plist
 - Install Source Code font
+
+## Upgrading/Syncing
+- Homebrew: `brew update && brew oudated | brew upgrade`
+- Sync iTerm2 settings (Preferences > General > "Save Current Settings to Folder")
