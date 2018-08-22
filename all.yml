@@ -1,0 +1,3 @@
+- import_playbook: formulae.yml
+- import_playbook: gitconfig.yml
+- import_playbook: shell.yml

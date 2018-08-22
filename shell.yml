@@ -29,3 +29,13 @@
         - .vimrc
         - .zshrc
         - .vim
+
+    - name: zsh path
+      register: zsh_path
+      shell: "which zsh"
+
+    - name: Set login shell
+      become: True
+      user:
+        name: "{{ ansible_user }}"
+        shell: "{{ zsh_path.stdout }}"

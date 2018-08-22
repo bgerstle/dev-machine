@@ -6,6 +6,11 @@
     casks:
       - quicklook-json
       - qlmarkdown
+      - docker
+      - bartender
+      - iterm2
+      - caffeine
+      - flux
     formulae:
       - python3
       - autoconf
@@ -21,9 +26,9 @@
       - pyenv
       - nodenv
     formulae_with_opts:
-      - name: vim
+      - name: macvim
         opts:
-          - with-override-system-vi
+          - with-override-system-vim
   tasks:
     - name: "Tap the taps"
       homebrew_tap:
