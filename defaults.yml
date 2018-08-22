@@ -1,0 +1,4 @@
+- name: Apply macOS defaults
+  hosts: localhost
+  tasks: []
+    # TODO: write all plists in 'defaults' directory
