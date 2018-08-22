@@ -20,7 +20,6 @@
       - pipenv
       - pyenv
       - nodenv
-      # see envd.yml for shell scripts to go with the various "env" tools
     formulae_with_opts:
       - name: vim
         opts:
