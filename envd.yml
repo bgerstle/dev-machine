@@ -1,3 +1,0 @@
-- name: "Setup env.d folder for sourcing scripts a shell startup"
-  hosts: localhost
-

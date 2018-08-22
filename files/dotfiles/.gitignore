@@ -74,3 +74,5 @@ Desktop.ini
 .lein-repl-history
 .nrepl-port
 
+# Ansible
+*.retry

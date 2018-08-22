@@ -17,24 +17,15 @@
     - name: Oh-My-Zsh
       shell: 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"'
 
-    # NOTE: not linking .gitconfig since it often contains local info (e.g. user email)
-    # see gitconfig.yml for universal settings
-    - name: List dotfiles
-      tags: dotfiles
-      register: find_dotfiles
-      find:
-        paths: files/dotfiles
-        hidden: yes
-        excludes: '*.sw*'
-
-    - assert:
-        that: find_dotfiles.matched > 0
-
     - name: Link dotfiles
       tags: dotfiles
       file:
-        src: "{{ playbook_dir }}/{{ item }}"
-        path: "~/{{ item | basename }}"
+        src: "{{ playbook_dir }}/files/dotfiles/{{ item }}"
+        path: "~/{{ item }}"
         state: link
         force: "{{ force_dotfiles }}"
-      with_items: "{{ find_dotfiles.files | map(attribute='path') | list }}"
+      with_items:
+        - .gitignore
+        - .vimrc
+        - .zshrc
+        - .vim

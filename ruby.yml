@@ -1,8 +1,0 @@
-- name: "Setup ruby dev environment"
-  hosts: localhost
-  tasks:
-    - name: "Install ruby & rbenv"
-      homebrew:
-        name: [ruby, rbenv]
-        state: present
-
