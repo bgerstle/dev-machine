@@ -15,7 +15,7 @@
       - python3
       - autoconf
       - automake
-      - universal-ctags
+      - universal-ctags/universal-ctags/universal-ctags
       - git
       - hub
       - jq
@@ -25,6 +25,8 @@
       - pipenv
       - pyenv
       - nodenv
+      - clojure
+      - leiningen
     formulae_with_opts:
       - name: macvim
         opts:
@@ -51,3 +53,4 @@
       homebrew_cask:
         name: "{{ casks }}"
         state: present
+        accept_external_apps: True 
