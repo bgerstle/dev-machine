@@ -1,0 +1,4 @@
+*.retry
+files/dotfiles/.vim/sessions/
+files/dotfiles/.vim/.netrwhist
+files/dotfiles/.vim/doc/

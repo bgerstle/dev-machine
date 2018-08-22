@@ -1,0 +1,48 @@
+- name: 'Apply git config'
+  hosts: localhost
+  vars:
+    config_file: "/Users/{{ ansible_user }}/.gitconfig"
+    configs:
+      - section: branch
+        option: autosetuprebase
+        value: always
+
+      - section: push
+        option: default
+        value: tracking
+
+      - section: apply
+        option: whitespace
+        value: fix
+
+      - section: color
+        option: ui
+        value: auto
+
+      - section: hub
+        option: protocol
+        value: https
+
+      - section: credential
+        option: helper
+        value: osxkeychain
+
+      - section: alias
+        option: pull-tags
+        value: 'fetch --prune origin "+refs/tags/*:refs/tags/*"'
+
+      - section: rerere
+        option: enabled
+        value: 1
+
+      - section: core
+        option: excludesFile
+        value: '~/.gitignore'
+  tasks:
+    - name: Set config
+      ini_file:
+        path: "{{ config_file }}"
+        section: "{{ item.section }}"
+        option: "{{ item.option }}"
+        value: "{{ item.value }}"
+      with_items: "{{ configs }}"

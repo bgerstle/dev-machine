@@ -1,0 +1,96 @@
+[submodule ".vim/bundle/vim-dispatch"]
+	path = files/dotfiles/.vim/bundle/vim-dispatch
+	url = git@github.com:tpope/vim-dispatch.git
+[submodule ".vim/bundle/vim-fireplace"]
+	path = files/dotfiles/.vim/bundle/vim-fireplace
+	url = git@github.com:tpope/vim-fireplace.git
+[submodule ".vim/bundle/vim-projectionist"]
+	path = files/dotfiles/.vim/bundle/vim-projectionist
+	url = git@github.com:tpope/vim-projectionist.git
+[submodule ".vim/bundle/vim-sensible"]
+	path = files/dotfiles/.vim/bundle/vim-sensible
+	url = git@github.com:tpope/vim-sensible.git
+[submodule ".vim/.vim/bundle/vim-classpath"]
+	path = files/dotfiles/.vim/.vim/bundle/vim-classpath
+	url = git@github.com:tpope/vim-classpath.git
+[submodule ".vim/bundle/nerdtree"]
+	path = files/dotfiles/.vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule ".vim/bundle/vim-tagbar"]
+	path = files/dotfiles/.vim/bundle/vim-tagbar
+	url = git@github.com:majutsushi/tagbar
+[submodule ".vim/bundle/vim-misc"]
+	path = files/dotfiles/.vim/bundle/vim-misc
+	url = git@github.com:xolox/vim-misc.git
+[submodule ".vim/bundle/vim-syntastic"]
+	path = files/dotfiles/.vim/bundle/vim-syntastic
+	url = git@github.com:scrooloose/syntastic.git
+[submodule ".vim/bundle/vim-airline"]
+	path = files/dotfiles/.vim/bundle/vim-airline
+	url = git@github.com:bling/vim-airline.git
+[submodule ".vim/bundle/vim-puppet"]
+	path = files/dotfiles/.vim/bundle/vim-puppet
+	url = git@github.com:rodjek/vim-puppet.git
+[submodule ".vim/bundle/vim-nerdtree"]
+	path = files/dotfiles/.vim/bundle/vim-nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
+[submodule ".vim/bundle/vim-polyglot"]
+	path = files/dotfiles/.vim/bundle/vim-polyglot
+	url = git@github.com:sheerun/vim-polyglot.git
+[submodule ".vim/bundle/vim-fugitive"]
+	path = files/dotfiles/.vim/bundle/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive.git
+[submodule ".vim/bundle/vim-pathogen"]
+	path = files/dotfiles/.vim/bundle/vim-pathogen
+	url = git@github.com:tpope/vim-pathogen
+[submodule ".vim/bundle/vim-tomorrow-theme"]
+	path = files/dotfiles/.vim/bundle/vim-tomorrow-theme
+	url = git@github.com:chriskempson/vim-tomorrow-theme.git
+[submodule ".vim/bundle/vim-github-colorscheme"]
+	path = files/dotfiles/.vim/bundle/vim-github-colorscheme
+	url = https://github.com/endel/vim-github-colorscheme.git
+[submodule ".vim/bundle/vim-node"]
+	path = files/dotfiles/.vim/bundle/vim-node
+	url = https://github.com/moll/vim-node.git
+[submodule ".vim/bundle/vim-logstash"]
+	path = files/dotfiles/.vim/bundle/vim-logstash
+	url = https://github.com/robbles/logstash.vim
+[submodule ".vim/bundle/vim-test"]
+	path = files/dotfiles/.vim/bundle/vim-test
+	url = https://github.com/janko-m/vim-test
+[submodule ".vim/bundle/vim-session"]
+	path = files/dotfiles/.vim/bundle/vim-session
+	url = https://github.com/xolox/vim-session
+[submodule ".vim/bundle/vim-hashicorp-tools"]
+	path = files/dotfiles/.vim/bundle/vim-hashicorp-tools
+	url = https://github.com/hashivim/vim-hashicorp-tools
+[submodule ".vim/bundle/vim-ansible-yaml"]
+	path = files/dotfiles/.vim/bundle/vim-ansible-yaml
+	url = https://github.com/chase/vim-ansible-yaml
+[submodule ".vim/bundle/vim-airline-themes"]
+	path = files/dotfiles/.vim/bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+[submodule ".vim/bundle/rust.vim"]
+	path = files/dotfiles/.vim/bundle/rust.vim
+	url = https://github.com/rust-lang/rust.vim
+[submodule ".vim/bundle/vim-cargo"]
+	path = files/dotfiles/.vim/bundle/vim-cargo
+	url = https://github.com/timonv/vim-cargo
+[submodule ".vim/bundle/vim-toml"]
+	path = files/dotfiles/.vim/bundle/vim-toml
+	url = https://github.com/cespare/vim-toml
+[submodule ".vim/bundle/ctrlp.vim"]
+	path = files/dotfiles/.vim/bundle/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim
+[submodule ".vim/bundle/python-mode"]
+	path = files/dotfiles/.vim/bundle/python-mode
+	url = https://github.com/python-mode/python-mode
+[submodule ".vim/bundle/vim-gutentags"]
+	path = files/dotfiles/.vim/bundle/vim-gutentags
+	url = https://github.com/ludovicchabant/vim-gutentags
+[submodule ".vim/bundle/dash.vim"]
+	path = files/dotfiles/.vim/bundle/dash.vim
+	url = https://github.com/rizzatti/dash.vim
+[submodule ".vim/bundle/typescript-vim"]
+	path = files/dotfiles/.vim/bundle/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim

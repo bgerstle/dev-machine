@@ -1,0 +1,49 @@
+- name: "Install homebrew formulae"
+  hosts: localhost
+  vars:
+    taps:
+      - homebrew/cask
+    casks:
+      - quicklook-json
+      - qlmarkdown
+    formulae:
+      - python3
+      - autoconf
+      - automake
+      - universal-ctags
+      - git
+      - hub
+      - jq
+      - tig
+      - ruby
+      - rbenv
+      - pipenv
+      - pyenv
+      - nodenv
+      # see envd.yml for shell scripts to go with the various "env" tools
+    formulae_with_opts:
+      - name: vim
+        opts:
+          - with-override-system-vi
+  tasks:
+    - name: "Tap the taps"
+      homebrew_tap:
+        name: "{{ taps }}"
+        state: present
+
+    - name: "Install formula"
+      homebrew:
+        name: "{{ formulae }}"
+        state: present
+
+    - name: "Install formula with options"
+      homebrew:
+        name: "{{ item.name }}"
+        state: present
+        install_options: "{{ item.opts }}"
+      with_items: "{{ formulae_with_opts }}"
+
+    - name: "Install casks"
+      homebrew_cask:
+        name: "{{ casks }}"
+        state: present

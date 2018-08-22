@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/briangerstle/Code/dev-machine/files/env.d'
+let g:netrw_dirhist_2='/Users/briangerstle/Code/dev-machine/files'
+let g:netrw_dirhist_3='/Users/briangerstle/Code/dev-machine/files/dotfiles'
+let g:netrw_dirhist_4='/Users/briangerstle/Code/dev-machine/files'
