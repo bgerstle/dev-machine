@@ -23,7 +23,9 @@
       - ruby
       - rbenv
       - pipenv
+      - pyenv-virtualenvwrapper
       - pyenv
+      - node
       - nodenv
       - clojure
       - leiningen
@@ -53,4 +55,14 @@
       homebrew_cask:
         name: "{{ casks }}"
         state: present
-        accept_external_apps: True 
+        accept_external_apps: True
+
+    - name: Set globals
+      shell: "{{ item.exec }} install {{ item.version }} && {{ item.exec }} global {{ item.version }}"
+      with_items:
+        - exec: nodenv
+          version: 8.9.4
+        - exec: rbenv
+          version: 2.4.4
+        - exec: pyenv
+          version: 2.7.10
