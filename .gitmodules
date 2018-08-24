@@ -19,9 +19,6 @@
 [submodule "files/dotfiles/.vim/bundle/vim-airline-themes"]
 	path = files/dotfiles/.vim/bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
-[submodule "files/dotfiles/.vim/bundle/vim-ansible-yaml"]
-	path = files/dotfiles/.vim/bundle/vim-ansible-yaml
-	url = https://github.com/chase/vim-ansible-yaml
 [submodule "files/dotfiles/.vim/bundle/vim-cargo"]
 	path = files/dotfiles/.vim/bundle/vim-cargo
 	url = https://github.com/timonv/vim-cargo
@@ -88,3 +85,6 @@
 [submodule "files/dotfiles/.vim/bundle/vim-tomorrow-theme"]
 	path = files/dotfiles/.vim/bundle/vim-tomorrow-theme
 	url = git@github.com:chriskempson/vim-tomorrow-theme.git
+[submodule "files/dotfiles/.vim/bundle/ansible-vim"]
+	path = files/dotfiles/.vim/bundle/ansible-vim
+	url = https://github.com/pearofducks/ansible-vim
