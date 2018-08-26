@@ -31,6 +31,10 @@
         option: pull-tags
         value: 'fetch --prune origin "+refs/tags/*:refs/tags/*"'
 
+      - section: fetch
+        option: recurseSubmodules
+        value: true
+
       - section: rerere
         option: enabled
         value: 1
