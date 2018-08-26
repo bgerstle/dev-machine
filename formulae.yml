@@ -11,11 +11,12 @@
       - iterm2
       - caffeine
       - flux
+      # for some reason, this works better than java cask
+      - java-jdk-javadoc
     formulae:
       - python3
       - autoconf
       - automake
-      - universal-ctags/universal-ctags/universal-ctags
       - git
       - hub
       - jq
@@ -27,17 +28,29 @@
       - pyenv
       - node
       - nodenv
+      - jenv
       - clojure
       - leiningen
     formulae_with_opts:
       - name: macvim
         opts:
           - with-override-system-vim
+      - name: universal-ctags/universal-ctags/universal-ctags
+        opts:
+          - HEAD
+          - force
   tasks:
     - name: "Tap the taps"
       homebrew_tap:
         name: "{{ taps }}"
         state: present
+
+    # some formaula require casks (java -> clojure)
+    - name: "Install casks"
+      homebrew_cask:
+        name: "{{ casks }}"
+        state: present
+        accept_external_apps: True
 
     - name: "Install formula"
       homebrew:
@@ -50,12 +63,6 @@
         state: present
         install_options: "{{ item.opts }}"
       with_items: "{{ formulae_with_opts }}"
-
-    - name: "Install casks"
-      homebrew_cask:
-        name: "{{ casks }}"
-        state: present
-        accept_external_apps: True
 
     - name: Set globals
       shell: "{{ item.exec }} install {{ item.version }} && {{ item.exec }} global {{ item.version }}"
