@@ -11,8 +11,7 @@
       - iterm2
       - caffeine
       - flux
-      # for some reason, this works better than java cask
-      - java-jdk-javadoc
+      - java
       - intellij-idea-ce
     formulae:
       - python3
