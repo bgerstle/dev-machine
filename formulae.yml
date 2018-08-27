@@ -13,6 +13,7 @@
       - flux
       # for some reason, this works better than java cask
       - java-jdk-javadoc
+      - intellij-idea-ce
     formulae:
       - python3
       - autoconf
@@ -35,10 +36,10 @@
       - name: macvim
         opts:
           - with-override-system-vim
+      # this failed to install at one point, had to `brew prune` for it to work
       - name: universal-ctags/universal-ctags/universal-ctags
         opts:
           - HEAD
-          - force
   tasks:
     - name: "Tap the taps"
       homebrew_tap:
