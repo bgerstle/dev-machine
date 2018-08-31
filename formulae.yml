@@ -13,6 +13,7 @@
       - flux
       - java
       - intellij-idea-ce
+      - visual-studo-code
     formulae:
       - python3
       - autoconf
@@ -24,7 +25,6 @@
       - ruby
       - rbenv
       - pipenv
-      - pyenv-virtualenvwrapper
       - pyenv
       - node
       - nodenv
