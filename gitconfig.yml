@@ -31,6 +31,10 @@
         option: pull-tags
         value: 'fetch --prune origin "+refs/tags/*:refs/tags/*"'
 
+      - section: alias
+        option: clean-branches
+        value: 'for b in `git branch --list | grep -v master`; do git branch -d $b; done'
+
       - section: fetch
         option: recurseSubmodules
         value: true
