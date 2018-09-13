@@ -33,7 +33,7 @@
 
       - section: alias
         option: clean-branches
-        value: 'for b in `git branch --list | grep -v master`; do git branch -d $b; done'
+        value: '!"for b in `git branch --list --merged | grep -v master | grep -v \"*\"`; do git branch -d $b; done"'
 
       - section: fetch
         option: recurseSubmodules
