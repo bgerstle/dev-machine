@@ -88,3 +88,6 @@
 [submodule "files/dotfiles/.vim/bundle/vim-hdevtools"]
 	path = files/dotfiles/.vim/bundle/vim-hdevtools
 	url = https://github.com/bitc/vim-hdevtools
+[submodule "files/dotfiles/.vim/bundle/lushtags"]
+	path = files/dotfiles/.vim/bundle/lushtags
+	url = https://github.com/bitc/lushtags
