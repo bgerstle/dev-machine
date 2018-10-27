@@ -158,12 +158,6 @@ let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 let g:ctrlp_mruf_relative = 1
 
-" python-mode
-let g:pymode_python = 'python3'
-" defer to syntastic
-let g:pymode_lint_on_write = 0
-set completeopt-=preview
-
 " python checkers
 let g:syntastic_python_checkers = ['python', 'flake8', 'mypy', 'pycodestyle', 'pep8']
 
