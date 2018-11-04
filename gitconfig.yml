@@ -35,10 +35,6 @@
         option: clean-branches
         value: '!"for b in `git branch --list --merged | grep -v master | grep -v \"*\"`; do git branch -d $b; done"'
 
-      - section: fetch
-        option: recurseSubmodules
-        value: true
-
       - section: rerere
         option: enabled
         value: 1
@@ -46,6 +42,10 @@
       - section: core
         option: excludesFile
         value: '~/.gitignore'
+
+      - section:
+        option: pull
+        rebase: true
   tasks:
     - name: Set config
       ini_file:

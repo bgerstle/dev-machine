@@ -1,6 +1,6 @@
 - name: Apply macOS defaults
   hosts: localhost
-  tasks: 
+  tasks:
     - name: Sync defaults
       command: "defaults import {{ item }} files/defaults/{{ item }}.plist"
       with_items:
@@ -8,3 +8,4 @@
         - com.apple.finder
         - NSGlobalDomain
         - com.apple.dock
+        - com.surteesstudios.Bartender
