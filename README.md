@@ -8,16 +8,16 @@ For the purpose of installing:
 
 - [x] dotfiles
 - [x] brew packages & casks
-- [ ] applying system preferences
-- [ ] installing preferred font
+- [x] applying system preferences
+- [x] installing preferred font
 
 ## Setup
 - Open "Terminal"
 - Run `./bootstrap.sh` to install prerequisites.
 - Run `ansible-playbook all.yml`
 - Download any other desired apps from App Store
-- Import iterm2 settings from plist
-- Install Source Code font
+- Configure iterm2 to use `./prefs` folder to sync defaults
+- Import IntelliJ settings from `.jar` file in `./prefs`
 
 ## Upgrading/Syncing
 - Homebrew: `brew update && brew oudated | brew upgrade`

@@ -1,4 +1,10 @@
 - name: Apply macOS defaults
   hosts: localhost
-  tasks: []
-    # TODO: write all plists in 'defaults' directory
+  tasks: 
+    - name: Sync defaults
+      command: "defaults import {{ item }} files/defaults/{{ item }}.plist"
+      with_items:
+        - com.apple.AppleMultitouchTrackpad
+        - com.apple.finder
+        - NSGlobalDomain
+        - com.apple.dock
