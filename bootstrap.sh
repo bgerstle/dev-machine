@@ -1,11 +1,11 @@
 #! /bin/bash
 
+set +e
+
 # Install Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# Install pip
-# TODO: install pip w/o sudo
-# sudo easy_install pip
+brew install python
 
 # Install ansible
-pip install -r requirements.txt
+pip3 install -r requirements.txt
