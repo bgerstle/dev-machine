@@ -26,6 +26,8 @@ export GREP_OPTIONS='--color=auto --exclude=*.pyc --exclude-dir=.git --exclude-d
 # HAX: manually add stuff to path for android
 export PATH=$PATH:~/Library/Android/sdk/platform-tools
 
+alias screensaver=/System/Library/CoreServices/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine
+
 # Source env.d scripts
 [ -d ~/.env.d ] && for e in `find ~/.env.d/*`; do source $e; done
 
