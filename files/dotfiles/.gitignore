@@ -76,3 +76,6 @@ Desktop.ini
 
 # Ansible
 *.retry
+
+# Ignore .env by default
+.env
