@@ -5,7 +5,8 @@ ZSH=~/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 
-ZSH_THEME="custom-crunch"
+# TODO: automate hard-linking custom-crunch into ~/.oh-my-zsh/themes/crunch.zsh-theme
+ZSH_THEME="crunch"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
