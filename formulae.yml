@@ -36,6 +36,7 @@
       - leiningen
       - stack
       - rustup-init
+      - go
     formulae_with_opts:
       - name: macvim
         opts:
@@ -82,3 +83,6 @@
 
     - name: Install rust
       command: 'rustup-init -y'
+
+    - name: Install gvm
+      shell: 'zsh < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)'
