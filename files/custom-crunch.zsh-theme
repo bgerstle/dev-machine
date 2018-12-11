@@ -1,6 +1,6 @@
 # customized crunch
 
-CRUNCH_BRACKET_COLOR="%{$fg[black]%}"
+CRUNCH_BRACKET_COLOR="%{$fg[default]%}"
 CRUNCH_TIME_COLOR="%{$fg[yellow]%}"
 CRUNCH_RVM_COLOR="%{$fg[magenta]%}"
 CRUNCH_DIR_COLOR="%{$fg[cyan]%}"
