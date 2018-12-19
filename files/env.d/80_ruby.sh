@@ -1,5 +1,5 @@
 # Setup rbenv
 eval "$(rbenv init -)"
 
-# Prefer local, bundler-installed gems
-export PATH=".bundle/bin:$PATH"
+# Prefer bundle's binstubs for locally-installed gems
+export PATH="./bin:$PATH"

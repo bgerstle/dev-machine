@@ -91,6 +91,9 @@
 [submodule "files/dotfiles/.vim/bundle/lushtags"]
 	path = files/dotfiles/.vim/bundle/lushtags
 	url = https://github.com/bitc/lushtags
-[submodule "files/dotfiles/.vim/bundle/haskellmode-vim"]
-	path = files/dotfiles/.vim/bundle/haskellmode-vim
-	url = https://github.com/lukerandall/haskellmode-vim
+[submodule "files/dotfiles/.vim/pack/vim-rails/start/vim-rails"]
+	path = files/dotfiles/.vim/pack/vim-rails/start/vim-rails
+	url = https://github.com/tpope/vim-rails
+[submodule "files/dotfiles/.vim/pack/vim-autoformat/start/vim-autoformat"]
+	path = files/dotfiles/.vim/pack/vim-autoformat/start/vim-autoformat
+	url = https://github.com/chiel92/vim-autoformat

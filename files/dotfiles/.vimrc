@@ -172,3 +172,6 @@ let g:test#preserve_screen = 1
 
 " Typescript
 let g:syntastic_typescript_checkers = ['tslint', 'tsc']
+
+" Haskell
+let g:hdevtools_stack = 1
