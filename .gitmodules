@@ -97,3 +97,9 @@
 [submodule "files/dotfiles/.vim/pack/vim-autoformat/start/vim-autoformat"]
 	path = files/dotfiles/.vim/pack/vim-autoformat/start/vim-autoformat
 	url = https://github.com/chiel92/vim-autoformat
+[submodule "files/dotfiles/.vim/bundle/vim-classpath"]
+	path = files/dotfiles/.vim/bundle/vim-classpath
+	url = https://github.com/tpope/vim-classpath.git
+[submodule "files/dotfiles/.vim/bundle/vim-salve"]
+	path = files/dotfiles/.vim/bundle/vim-salve
+	url = https://github.com/tpope/vim-salve

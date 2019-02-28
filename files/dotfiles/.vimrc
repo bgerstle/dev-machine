@@ -152,7 +152,6 @@ let g:syntastic_rust_checkers = ['cargo']
 
 
 " ctrlp
-let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_switch_buffer = 'etvh'
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
