@@ -37,6 +37,8 @@
       - stack
       - rustup-init
       - go
+      - openssl
+      - readline
     formulae_with_opts:
       - name: macvim
         opts:
