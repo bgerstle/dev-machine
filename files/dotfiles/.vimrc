@@ -156,6 +156,9 @@ let g:ctrlp_switch_buffer = 'etvh'
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 let g:ctrlp_mruf_relative = 1
+let g:ctrlp_use_caching = 1
+let g:ctrlp_clear_cache_on_exit = 0
+let g:ctrlp_lazy_update = 1
 
 " python checkers
 let g:syntastic_python_checkers = ['python', 'flake8', 'mypy', 'pycodestyle', 'pep8']
