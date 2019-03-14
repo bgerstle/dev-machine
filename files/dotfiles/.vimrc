@@ -5,7 +5,7 @@ runtime! plugin/sensible.vim
 " Enable file type and indent detection
 filetype plugin indent on
 
-colorscheme tomorrow
+colorscheme tomorrow-night
 
 " For Command-T
 set switchbuf=usetab
